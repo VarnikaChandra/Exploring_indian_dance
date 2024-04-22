@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>{{ dance_style.name }} - Indian Dance Styles</title>
+</head>
+<body>
+    <header>
+        <h1>{{ dance_style.name }}</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <!-- Add navigation links as in index.html -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Overview</h2>
+            <p>{{ dance_style.description }}</p>
+            <img src="{{ dance_style.image_url }}" alt="Image of {{ dance_style.name }}">
+            <video controls src="{{ dance_style.video_url }}">Video not supported</video>
+        </article>
+    </main>
+
+    <footer>
+        <p>Copyright © 2024 Indian Dance Styles</p>
+    </footer>
+</body>
+</html>
