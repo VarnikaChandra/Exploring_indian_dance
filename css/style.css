@@ -62,7 +62,6 @@ a:focus, button:focus, input:focus, textarea:focus, select:focus {
     font-size: 1em; 
 }
  
-
   
           
 body{
@@ -102,6 +101,9 @@ header h1 {
 
 h2{
     color:#460B2F;
+}
+h3{
+    color:white;
 }
 
 .dance-list {
@@ -226,23 +228,13 @@ h2{
     text-align: center;
   }
 */
+
 .dance-item {
     text-decoration: none;
-  }
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  .fade-in-up {
-    animation: fadeInUp 1s ease-out;
-  }
+}
 
+
+ 
 
 @media (max-width: 600px) {
     .dance-list {

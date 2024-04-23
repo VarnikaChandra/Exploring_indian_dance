@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const dances = [
-        { name: "Bharatanatyam", imageUrl: "images/Anjani-350.jpg", pageUrl: "bharatanatyam.html" },
+        { name: "Bharatanatyam", imageUrl: "images/Anjani-350.jpg", regionId: "IN-TN", pageUrl: "bharatanatyam.html" },
         { name: "Kathak", imageUrl: "images/kathakreeya.jpg", pageUrl: "kathak.html" },
         { name: "Bhangra", imageUrl: "images/b3.jpeg", pageUrl: "bhangra.html" },
         { name: "Raas Garba", imageUrl: "images/raas3.jpeg", pageUrl: "raasgarba.html" },
@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const listElement = document.getElementById('dance-list');
     const searchBox = document.getElementById('searchBox');
 
-    dances.forEach(dance => {
+    dances.forEach(dance =>{
         const itemElement = document.createElement('a');
-        itemElement.className = 'dance-item';
+        itemElement.className ='dance-item';
         itemElement.href = dance.pageUrl;
         itemElement.innerHTML = `
             <div>
@@ -28,11 +28,11 @@ document.addEventListener("DOMContentLoaded", function() {
         listElement.appendChild(itemElement);
     });
 
-    searchBox.addEventListener('keyup', function(e) {
+    searchBox.addEventListener('keyup', function(e){
         const term=e.target.value.toLowerCase();
-        const filteredDances=dances.filter(dance => dance.name.toLowerCase().includes(term));
+        const filteredDances=dances.filter(dance=>dance.name.toLowerCase().includes(term));
         listElement.innerHTML = '';
-        filteredDances.forEach(dance => {
+        filteredDances.forEach(dance=>{
             const itemElement = document.createElement('a');
             itemElement.className='dance-item';
             itemElement.href = dance.pageUrl;
@@ -42,6 +42,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     <h2>${dance.name}</h2>
                 </div>
             `;
+
+    
+    
             listElement.appendChild(itemElement);
         });
     });
