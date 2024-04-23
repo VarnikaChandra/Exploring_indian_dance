@@ -1,0 +1,5 @@
+The website features various Indian dance styles. The home page includes each of the styles the website features. Each page includes a different style with an introduction, historical roots, performance  techniques, and cultural significance. The page also includes a gallery of images showcasing the style with a video.
+ 
+ I added each style as a card on the homepage using an array in javascript. Allows easy access + modification of each card. Added a search box with javascript - using .filter(). 
+
+Javascript is working correctly. I need to check all aspects of accessibility still. Color contrast, zoom changing, adding skip to main on each page + nav through keyboard. 

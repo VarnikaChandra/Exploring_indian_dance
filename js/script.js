@@ -29,12 +29,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     searchBox.addEventListener('keyup', function(e) {
-        const term = e.target.value.toLowerCase();
-        const filteredDances = dances.filter(dance => dance.name.toLowerCase().includes(term));
-        listElement.innerHTML = ''; // Clear existing dance items
+        const term=e.target.value.toLowerCase();
+        const filteredDances=dances.filter(dance => dance.name.toLowerCase().includes(term));
+        listElement.innerHTML = '';
         filteredDances.forEach(dance => {
             const itemElement = document.createElement('a');
-            itemElement.className = 'dance-item';
+            itemElement.className='dance-item';
             itemElement.href = dance.pageUrl;
             itemElement.innerHTML = `
                 <div>

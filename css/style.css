@@ -78,9 +78,17 @@ body{
   background-attachment:fixed;
   color: #5a2a27; 
 }
-
+.bubble-text {
+    background-color: #9A031E; /* Solid red background */
+    color: white;
+    display: inline-block; /* Makes the div inline so it wraps content */
+    padding: 10px 20px; /* Adds space inside the bubble */
+    border-radius: 25px; /* Gives the bubble rounded corners */
+    margin: 10px 0; /* Optional: adds some space around the bubble */
+}
 header, footer {
-    background: #9A031E;
+    background-color: rgba(154, 3, 30, 0.8);
+    /*background: #9A031E;*/
     color: white;
     padding: 20px 40px;
     text-align: center;
@@ -176,8 +184,64 @@ h2{
 }
 
 .card:hover .card-image img {
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: scale(1.1);
 }
+
+/*
+.dance-item {
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+    display: block;
+    margin: 10px;
+    text-decoration: none;
+    overflow: hidden; 
+  }
+  
+  .dance-item div {
+    transition: padding 0.5s ease-in-out;
+    padding: 20px; 
+  }
+  
+  .dance-item img {
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    opacity: 0; 
+    transform: scale(0.5); 
+    width: 100%; 
+  }
+  
+  .dance-item:hover img {
+    opacity: 1; 
+    transform: scale(1); 
+  }
+  
+  .dance-item h2 {
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    transform: translateY(-20px); 
+  }
+  
+  .dance-item:hover h2 {
+    transform: translateY(0); 
+    opacity: 1; 
+    text-align: center;
+  }
+*/
+.dance-item {
+    text-decoration: none;
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .fade-in-up {
+    animation: fadeInUp 1s ease-out;
+  }
 
 
 @media (max-width: 600px) {
