@@ -103,6 +103,10 @@ p {
     /*border-color: #9A031E;*/
 }
 
+iframe {
+    border: 0; 
+
+  }
 @media(prefers-reduced-motion: reduce) {
     *, *::before, *::after {
         animation-duration: 0.001ms !important;
