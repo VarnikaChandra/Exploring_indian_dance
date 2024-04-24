@@ -78,7 +78,7 @@ body{
   color: #5a2a27; 
 }
 .bubble-text {
-    background-color: #9A031E; /* Solid red background */
+    background-color: #9A031E; 
     color: white;
     display: inline-block; /* Makes the div inline so it wraps content */
     padding: 10px 20px; /* Adds space inside the bubble */
@@ -95,7 +95,7 @@ header, footer {
 
 header h1 {
     font-family: 'Samarkan', Arial, sans-serif;  
-    color: #FB8B24; 
+    color: white; 
     
 }
 
